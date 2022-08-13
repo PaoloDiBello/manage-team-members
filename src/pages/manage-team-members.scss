@@ -31,6 +31,10 @@ $grey: #acaca8;
       font-family: droid-sans, sans-serif;
       color: $grey;
       margin-bottom: 0;
+      padding: 8px;
+      &:hover {
+        background: $green-2;
+      }
       @media (max-width: 767px) {
         &__text {
           display: none;
