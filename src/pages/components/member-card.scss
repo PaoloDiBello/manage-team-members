@@ -1,0 +1,91 @@
+$red: #ff671f;
+$green: #007672;
+$green-2: #e2f4ea;
+$grey: #acaca8;
+
+.member-card {
+  display: flex;
+  align-items: center;
+  height: 40px;
+
+  padding: 16px 0 16px 10px;
+
+  @media (min-width: 768px) and (max-width: 1300px), (min-width: 1900px) {
+    padding: 16px 0 16px 10px;
+  }
+  @media (min-width: 320px) and (max-width: 768px),
+    (min-width: 1300px) and (max-width: 1900px) {
+    padding: 10px 0 10px 10px;
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &:hover {
+    background-color: $green-2;
+  }
+
+  &:hover .member-card__avatar.can-delete,
+  .member-card__avatar.delete {
+    display: none;
+  }
+  &:hover .member-card__avatar.delete {
+    display: flex;
+    font-size: 14px;
+    color: $red;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    span {
+      margin: 0 auto;
+    }
+    &:hover {
+      border: 2px solid $red;
+    }
+  }
+
+  &.add {
+    cursor: pointer;
+    .member-card__avatar {
+      cursor: pointer;
+      background: $green-2;
+      color: $green;
+      font-size: 18px;
+      span {
+        margin: 0 auto;
+      }
+    }
+    &:hover {
+      .member-card__avatar {
+        background-color: white;
+      }
+    }
+    .member-card__info__add-member {
+      color: $green;
+    }
+  }
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  &__role,
+  &__username {
+    font-size: 14px;
+    font-family: droid-sans, sans-serif;
+  }
+
+  &__role {
+    .red-asterisk {
+      color: $red;
+    }
+  }
+  &__username {
+    font-weight: 700;
+  }
+}

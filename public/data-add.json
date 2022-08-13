@@ -1,0 +1,20 @@
+[
+  {
+    "username": "Max J\u00e1nos",
+    "role": "Admin",
+    "picture": "avatar-default.png",
+    "id": 11
+  },
+  {
+    "username": "Erika Kata",
+    "role": "Internal",
+    "picture": "avatar-default.png",
+    "id": 12
+  },
+  {
+    "username": "Desmond Kata",
+    "role": "Internal",
+    "picture": "avatar-default.png",
+    "id": 13
+  }
+]

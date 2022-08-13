@@ -1,0 +1,67 @@
+$red: #ff671f;
+$green: #007672;
+$green-2: #e2f4ea;
+$grey: #acaca8;
+
+.select__control {
+  margin: 16px 10px 10px 10px;
+}
+
+.select__control--menu-is-open {
+  &:hover,
+  &:focus,
+  &:active {
+    outline: auto;
+    box-shadow: none;
+    border: none;
+    border-bottom: 2px solid $green-2;
+  }
+  outline: auto;
+  box-shadow: none;
+  border: none;
+}
+
+.select__value-container,
+.select__control {
+  border: none !important;
+  border-color: none !important;
+  border-radius: 0% !important;
+}
+.select__control {
+  border-bottom: 2px solid $green-2 !important;
+}
+
+.select__control--is-focused {
+  box-shadow: none !important;
+  border-bottom: 2px solid $green !important;
+}
+
+.no-options-message {
+  padding: 16px;
+  padding-top: 0px;
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    color: $green;
+  }
+  &__description {
+    font-size: 14px;
+    color: $grey;
+    margin: 0;
+  }
+}
+
+.member-card-option {
+  .member-card {
+    height: 30px;
+    padding: 8px 0 8px 10px;
+    &__avatar {
+      width: 30px;
+      height: 30px;
+    }
+    &__username {
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}
