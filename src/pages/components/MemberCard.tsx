@@ -20,7 +20,7 @@ const MemberCard = ({
     <div className="member-card">
       <img
         className={`member-card__avatar ${canDelete ? "can-delete" : ""}`}
-        src={"/assets/images/" + picture}
+        src={"docs/assets/" + picture}
         loading="lazy"
         alt={username}
       />
