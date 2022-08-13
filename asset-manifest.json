@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/PaoloDiBello/manage-team-members/static/css/main.34f45e2d.css",
-    "main.js": "/PaoloDiBello/manage-team-members/static/js/main.f48db18a.js",
+    "main.js": "/PaoloDiBello/manage-team-members/static/js/main.01ac540f.js",
     "static/js/787.043e8309.chunk.js": "/PaoloDiBello/manage-team-members/static/js/787.043e8309.chunk.js",
     "index.html": "/PaoloDiBello/manage-team-members/index.html",
     "static/media/users.svg": "/PaoloDiBello/manage-team-members/static/media/users.e32d7235e73a76a3955fa6c2f1f0afe3.svg",
     "static/media/chevron-up.svg": "/PaoloDiBello/manage-team-members/static/media/chevron-up.614d3fa14dd3ae46d6c4b7b765766adc.svg",
     "static/media/chevron-down.svg": "/PaoloDiBello/manage-team-members/static/media/chevron-down.2d65dd0e43357a9312766a1b8ca479c0.svg",
     "main.34f45e2d.css.map": "/PaoloDiBello/manage-team-members/static/css/main.34f45e2d.css.map",
-    "main.f48db18a.js.map": "/PaoloDiBello/manage-team-members/static/js/main.f48db18a.js.map",
+    "main.01ac540f.js.map": "/PaoloDiBello/manage-team-members/static/js/main.01ac540f.js.map",
     "787.043e8309.chunk.js.map": "/PaoloDiBello/manage-team-members/static/js/787.043e8309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34f45e2d.css",
-    "static/js/main.f48db18a.js"
+    "static/js/main.01ac540f.js"
   ]
 }
