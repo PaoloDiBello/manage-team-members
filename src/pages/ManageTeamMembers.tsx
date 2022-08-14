@@ -10,11 +10,7 @@ import { ReactComponent as ChevronDownIcon } from "../icons/chevron-down.svg";
 const LIMIT_MEMBERS_SHOWN = 5;
 
 const ManageTeamMembers = () => {
-  const {
-    teamMembers: members,
-    setTeamMembers: setMembers,
-    isLoading,
-  } = useTeamMembers();
+  const { teamMembers: members, setTeamMembers: setMembers } = useTeamMembers();
   const { teamMembers: membersToAdd, setTeamMembers: setTeamMembersToAdd } =
     useTeamMembersToAdd();
 
@@ -42,9 +38,11 @@ const ManageTeamMembers = () => {
     setTeamMembersToAdd(membersToAdd.filter((member) => member.id !== id));
   };
 
+  const hasMembersToAdd = membersToAdd.length > 0;
+
   const membersToShow = showAll
     ? members
-    : members.slice(0, LIMIT_MEMBERS_SHOWN);
+    : members.slice(0, LIMIT_MEMBERS_SHOWN + (hasMembersToAdd ? 0 : 1));
 
   return (
     <div className="manage-team-members">

@@ -1,9 +1,7 @@
 import React from "react";
-import Select from "react-select";
 import { TeamMember } from "../../@types/team-members";
 import CustomSelect from "./CustomSelect";
 import "./member-card.scss";
-import MemberCard from "./MemberCard";
 
 type AddMemberCardProps = {
   users: TeamMember[];
