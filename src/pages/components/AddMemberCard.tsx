@@ -11,9 +11,6 @@ type AddMemberCardProps = {
 const AddMemberCard = ({ users, onAdd }: AddMemberCardProps) => {
   const [addUser, setAddUser] = React.useState(false);
 
-  if (users.length === 0) {
-    return null;
-  }
   return (
     <div
       className="add-member-container"

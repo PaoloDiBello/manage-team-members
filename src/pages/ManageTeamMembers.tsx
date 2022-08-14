@@ -61,7 +61,9 @@ const ManageTeamMembers = () => {
           </p>
         </div>
         <div className="team-members">
-          <AddMemberCard users={membersToAdd} onAdd={handleAddMember} />
+          {hasMembersToAdd && (
+            <AddMemberCard users={membersToAdd} onAdd={handleAddMember} />
+          )}
           {membersToShow?.map((member) => (
             <MemberCard
               key={member.id}
