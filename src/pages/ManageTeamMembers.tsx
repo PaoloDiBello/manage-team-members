@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useTeamMembers, useTeamMembersToAdd } from "./api/getTeamMembers";
+import { useTeamMembers } from "./api/getTeamMembers";
 import AddMemberCard from "./components/AddMemberCard";
 import MemberCard from "./components/MemberCard";
 import "./manage-team-members.scss";
@@ -10,14 +10,15 @@ import { ReactComponent as ChevronDownIcon } from "../icons/chevron-down.svg";
 const LIMIT_MEMBERS_SHOWN = 5;
 
 const ManageTeamMembers = () => {
-  const { teamMembers: members, setTeamMembers: setMembers } = useTeamMembers();
+  const { teamMembers: members, setTeamMembers: setMembers } =
+    useTeamMembers(`./data.json`);
   const { teamMembers: membersToAdd, setTeamMembers: setTeamMembersToAdd } =
-    useTeamMembersToAdd();
+    useTeamMembers(`./data-add.json`);
 
   const [showAll, setShowAll] = useState(false);
 
   const toggleShowAll = () => {
-    setShowAll(!showAll);
+    setShowAll((s) => !s);
   };
 
   const handleDeleteMember = (id: number) => {
